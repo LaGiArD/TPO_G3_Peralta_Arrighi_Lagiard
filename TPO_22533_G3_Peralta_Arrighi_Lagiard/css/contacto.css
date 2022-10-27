@@ -1,0 +1,1121 @@
+/**************** FUENTES  *****************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+@font-face {
+    font-family: "brick";
+    src: url("../fonts/brick.ttf");
+}
+
+@font-face {
+    font-family: "monkey";
+    src: url("../fonts/MONKEY.otf");
+}
+
+
+@font-face {
+    font-family: "nature";
+    src: url("../fonts/NATURE/Nature.ttf");
+}
+
+@font-face {
+    font-family: "beauty";
+    src: url("../fonts/NATURE/NatureBeauty.ttf");
+}
+/******************************************/
+
+
+/********* ESTILO DEL HTML Y BODY *********/
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Qwitcher Grypen', cursive;
+    background-color: #c8dbd4;
+
+    
+}
+
+
+
+*{
+   margin: 0%;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 62.5%;
+  
+}
+
+/*****************************************/
+
+
+
+
+
+/*********** ESTILO DEL HEADER **********/
+.header{
+    background-color: #a6d1d8;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-auto-rows: 100px;
+    grid-template-areas:  
+    "logo titulo"
+    "logo men";
+}
+
+.menu{
+    display: flex;
+    justify-content: right;
+    background: color #a6d1d8;
+    font-size: 8rem;
+    grid-area: men;
+
+}
+
+.title{
+    font-size: 6rem;
+    grid-area: titulo;
+    font-family: "nature";
+    font-size: 13rem;   
+}
+
+.logo{
+    margin: 0;
+    grid-area: logo;
+}
+
+.logo img{
+    width: 20rem;
+}
+
+.menu-item{
+    margin: 1rem;
+    font-family: "brick";
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*****************************************/
+
+
+
+/********** ESTILO DE CAJAS MAIN *********/
+
+.parrafo{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-family: "Poppins";;
+
+}
+h4{
+    margin-top: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+b{
+    font-size: 3rem;
+    color: rgb(27, 115, 192);    
+}
+
+.gallery{
+ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 5rem;
+    grid-template-areas: 
+    "img1 cor sal img2"
+    "img3 bar mend img4"; 
+    
+}
+
+.gallery__img{
+    width: 100%;
+    height: 150%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+
+/* ANIMACION  GALLERY */
+
+.gallery__picture{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin: auto;
+    width: 100%; 
+
+}
+
+
+.gallery__picture::before{
+    content: "¡Muy pronto!";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fafaf4a6;
+    transform: scale(0);
+    transition: transform .4s;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.gallery__picture:hover::before{
+    transform: scale(1) rotate(360deg);
+}
+
+
+/* GRID AREAS */
+
+.link1{
+    grid-area: img1;
+}
+
+.link2{
+    grid-area: img2;
+}
+.link3{
+    grid-area: img3;
+}
+
+.link4{
+    grid-area: img4;
+}
+
+.descripcion--cor{
+    grid-area: cor;
+}
+
+.descripcion--sal{
+    grid-area: sal;
+}
+
+.descripcion--bar{
+    grid-area: bar;
+}
+
+.descripcion--mend{
+    grid-area: mend;
+}
+
+.descripcion{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* API */
+
+
+#temp1{
+    
+    font-size: 2.6rem;
+}
+span{
+    font-size: 2.6rem;
+}
+/*****************************************/
+
+
+
+
+/*********FORMULARIO***************/
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+#disabledSelect{
+    font-size: 2rem;
+}
+
+button{
+    font-size: 2.5rem;
+}
+
+.formulario{
+    margin-bottom: 3rem;
+}
+/*****************************************/
+
+
+
+
+
+
+/*********** ESTILO DEL FOOTER **********/
+.grid-footer{
+    padding-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 8rem);
+        
+ }
+
+.footer{
+    background: linear-gradient(to bottom, #a6d1d8, white);
+   
+  } 
+
+h3{
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    /* font-family: "Poppins"; */
+}
+
+.footer-items{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.footer-items a{
+    font-size: 2rem;}
+
+.fa-house-user{
+    color: #00acee;
+    align-content: center;    }
+
+/*****************************************/
+
+
+
+/********** estilos barra de redes sociales*********/
+
+.container-bar{
+    display: flex;
+    height: 30px;
+    justify-items: center;
+    bottom: 0;
+
+}
+.container-bar a{
+	display: block;
+    width: 30px;
+	line-height: 35px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	transition: all 500ms ease;
+	color: #fff;
+}
+.container-bar a:hover{
+	background: #1c1c1c;
+}
+.container-bar .fa-facebook{
+	background: #3b5998;
+	border-radius: 5px 0px 0px 0px;
+}
+.container-bar .fa-youtube{
+	background: #e52a23;
+}
+.container-bar .fa-twitter{
+	background: #00acee;
+}
+.container-bar .fa-pinterest{
+	background: #c8232c;
+	border-radius: 0px 5px 0px 0px;
+}
+
+.icon-social{
+    display: flex;
+	transition: all;
+	transform: translateX(0%);
+    height: 30px;
+}
+/*****************************************/
+
+
+
+
+
+
+/*********** FUNCIONAMIENTO **************/
+/************* RESPONSIVO ****************/
+
+
+
+/* QUERY NRO 1 (ENTRE 300 Y 544 PIXELES): */
+@media screen and (min-width: 300px) and (max-width: 544px){
+    
+    /*HEADER*/    
+    .header{
+        background-color: #a6d1d8;
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-auto-rows: 50px;
+        grid-template-areas:  
+        "logo titulo"
+        "men men";
+    }
+
+    .title{
+        font-size: 3rem;
+    }
+
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .title{
+        font-size: 5rem;
+        margin-top: 2rem;
+    }
+    
+    .menu {
+        font-size: 2.5rem;
+
+    }
+
+    .menu-item{
+        margin: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    /* CAJAS MAIN */
+    .parrafo {
+        font-size: 1rem;
+        text-align:center;
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    b{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 1.6rem;
+    }
+   
+    .gallery{
+        padding: 1rem 1rem 3rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 
+        "img1 cor"
+        "sal img2"
+        "img3 bar"
+        "mend img4"; 
+    }
+
+    .descripcion{
+        font-size: 2rem;
+    }
+
+    /* API */
+    #temp1{
+    
+        font-size: 1rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    
+   
+    /* FOOTER */
+    .footer-items{
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    footer{
+        font-size: 3rem;
+    }
+    .grid-footer{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 40px);
+        padding: 0;
+            
+     }
+    
+    .footer{
+        background: linear-gradient(to bottom, #a6d1d8, white);
+      } 
+    
+    h3{
+        margin-top: 0;
+        font-size: .95rem;
+        text-align: center;
+    }
+    .container-bar{
+        padding-top: 0.7rem;
+        display: flex;
+        height: 25px;
+        justify-content: center;
+        bottom: 0;
+    
+    }
+    .container-bar a{
+        display: block;
+        width: 25px;
+        line-height: 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        transition: all 500ms ease;
+        color: #fff;
+    }
+    .container-bar a:hover{
+        background: #1c1c1c;
+    }
+    .container-bar .fa-facebook{
+        background: #3b5998;
+        border-radius: 7px 0px 0px 7px;
+    }
+    .container-bar .fa-youtube{
+        background: #e52a23;
+    }
+    .container-bar .fa-twitter{
+        background: #00acee;
+    }
+    .container-bar .fa-pinterest{
+        background: #c8232c;
+        border-radius: 0px 7px 7px 0px;
+    }
+    .icon-social{
+        display: flex;
+        transition: all;
+        transform: translateX(0%);
+        height: 25px;
+        
+    }
+
+
+}
+
+
+
+
+
+/* QUERY NRO 2 (ENTRE 545 Y 768 PIXELES): */
+
+@media screen and (min-width: 545px) and (max-width: 768px){
+    /*HEADER*/
+    .header{
+        background-color: #a6d1d8;
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-auto-rows: 62px;
+        grid-template-areas:  
+        "logo titulo"
+        "logo men";
+    }
+
+    .title{
+        font-size: 8rem;
+        padding-top: 2rem;
+        padding-left: 6rem;    }
+
+
+    .logo img{
+        width: 125px;
+        height: 125px; }
+    
+    .menu {
+        font-size: 4rem;
+        font-family: "brick";
+    }
+
+    .menu-item{
+        margin: 2rem;
+    }
+    
+
+    /* CAJAS MAIN */
+    .parrafo {
+        font-size: 1.46rem;
+        text-align:center;
+        padding: 0.5rem;
+        padding-bottom: 4rem;
+    }
+
+    b{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 2.3rem;
+    }
+
+
+    .gallery{
+        padding: 0 2rem 5rem 2rem;
+        grid-auto-rows: auto;
+        gap: 1rem;
+    }
+
+    .descripcion{
+        font-size: 3rem;
+    }
+
+    /* API */
+    #temp1{
+    
+        font-size: 1.5rem;
+    }
+    span{
+        font-size: 1.5rem;
+    }
+
+    /*********FORMULARIO***************/
+
+
+    h2{
+        font-size: 2.5rem;
+    }
+    /*****************************************/
+
+
+
+
+
+    /* FOOTER */
+    .grid-footer{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 7rem);
+            
+     }
+    
+    .footer{
+        background: linear-gradient(to bottom, #a6d1d8, white);
+        padding-top: .3rem;
+      } 
+    
+    h3{
+        margin-top: 10px;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .footer-items a{
+        font-size: 3rem;}
+
+    .container-bar{
+        padding-top: 2.7rem;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        bottom: 0;
+        
+    }
+    .container-bar a{
+        display: block;
+        width: 40px;
+        line-height: 42px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        transition: all 500ms ease;
+        color: #fff;
+    }
+    .container-bar a:hover{
+        background: #1c1c1c;
+    }
+    .container-bar .fa-facebook{
+        background: #3b5998;
+        border-radius: 7px 0px 0px 7px;
+    }
+    .container-bar .fa-youtube{
+        background: #e52a23;
+    }
+    .container-bar .fa-twitter{
+        background: #00acee;
+    }
+    .container-bar .fa-pinterest{
+        background: #c8232c;
+        border-radius: 0px 7px 7px 0px;
+    }
+    .icon-social{
+        display: flex;
+        transition: all;
+        transform: translateX(0%);
+        height: 40px;
+        
+    }
+
+}
+
+
+
+
+
+/* QUERY NRO 3 (1024 hasta 1920): */
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+    /*HEADER*/
+    .header{
+        background-color: #a6d1d8;
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-auto-rows: 75px;
+        grid-template-areas:  
+        "logo titulo"
+        "logo men";
+    }
+
+    .title{
+        font-size: 10rem;
+        padding-top: 2rem;
+        padding-left: 7rem;
+    }
+
+
+    .logo img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu {
+        font-size: 5rem;
+        font-family: "brick";
+    }
+
+    .menu-item{
+    margin: 2rem;
+    }
+    
+
+    /* CAJAS MAIN */
+    .parrafo {
+        font-size: 1.57rem;
+        text-align:center;
+        padding: 0.5rem;
+        padding-bottom: 4rem;
+    }
+
+    b{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 2.6rem;
+    }
+
+
+    .gallery{
+        padding: 0 2rem 5rem 2rem;
+        grid-auto-rows: auto;
+        gap: 1rem;
+    }
+
+    .gallery__picture::before{
+        font-size: 3.5rem;
+    }
+    /*********FORMULARIO***************/
+
+
+    h2{
+        font-size: 3.5rem;
+    }
+
+    .descripcion{
+        font-size: 3.5rem;
+    }
+
+    /* API */
+    #temp1{
+    
+        font-size: 1.8rem;
+    }
+    span{
+        font-size: 1.8rem;
+    }
+
+    /*****************************************/
+
+
+
+
+
+    /* FOOTER */
+    .grid-footer{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 8rem);
+            
+     }
+    
+    .footer{
+        background: linear-gradient(to bottom, #a6d1d8, white);
+        padding-top: .3rem;
+      } 
+    
+    h3{
+        margin-top: 10px;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .footer-items a{
+        font-size: 5rem;}
+
+    
+    .container-bar{
+        padding-top: 2rem;
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        bottom: 0;    
+        
+    }
+    .container-bar a{
+        display: block;
+        width: 45px;
+        line-height: 47px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        transition: all 500ms ease;
+        color: #fff;
+    }
+    .container-bar a:hover{
+        background: #1c1c1c;
+    }
+    .container-bar .fa-facebook{
+        background: #3b5998;
+        border-radius: 7px 0px 0px 7px;
+    }
+    .container-bar .fa-youtube{
+        background: #e52a23;
+    }
+    .container-bar .fa-twitter{
+        background: #00acee;
+    }
+    .container-bar .fa-pinterest{
+        background: #c8232c;
+        border-radius: 0px 7px 7px 0px;
+    }
+    .icon-social{
+        display: flex;
+        transition: all;
+        transform: translateX(0%);
+        height: 45px;
+            
+    }
+
+}
+
+
+
+
+
+/* QUERY NRO 4 (1440 hasta 2560): */
+
+@media screen and (min-width: 1440px) and (max-width: 2560px){
+    /*HEADER*/
+
+    .header{
+        grid-auto-rows: 85px;
+
+    }
+
+    .title{
+        font-size: 12rem;
+        padding-top: 3rem;
+        padding-left: 10rem;
+
+    }
+
+    .logo img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .menu {
+        font-size: 6rem;
+        font-family: "brick";
+    }
+
+    .menu-item{
+    margin: 2rem;
+    }
+
+
+
+    /* CAJAS MAIN */
+    .parrafo {
+        font-size: 2.7rem;
+        text-align:center;
+        padding: 0.5rem;
+        padding-bottom: 8rem;
+    }
+
+    b{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 3.6rem;
+    }
+
+
+    .gallery{
+        padding: 0 2rem 5rem 2rem;
+        grid-auto-rows: auto;
+        gap: 1rem;
+    }
+
+    .gallery__picture::before{
+        font-size: 3.5rem;
+    }
+
+    .descripcion{
+        font-size: 5rem;
+    }
+    /*********FORMULARIO***************/
+
+
+    h2{
+        font-size: 5rem;
+    }
+
+    /*****************************************/
+
+
+
+
+
+    /* FOOTER */
+    .grid-footer{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 8rem);
+            
+    }
+
+    .footer{
+        background: linear-gradient(to bottom, #a6d1d8, white);
+        padding-top: .3rem;
+    } 
+
+    h3{
+        margin-top: 10px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .footer-items a{
+        font-size: 4.5rem;
+    
+    }
+    .container-bar{
+        padding-top: 1.5rem;
+        display: flex;
+        height: 55px;
+        justify-content: center;
+        bottom: 0;
+
+    }
+    .container-bar a{
+        display: block;
+        width: 55px;
+        line-height: 55px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 35px;
+        transition: all 500ms ease;
+        color: #fff;
+    }
+    .container-bar a:hover{
+        background: #1c1c1c;
+    }
+    .container-bar .fa-facebook{
+        background: #3b5998;
+        border-radius: 7px 0px 0px 7px;
+    }
+    .container-bar .fa-youtube{
+        background: #e52a23;
+    }
+    .container-bar .fa-twitter{
+        background: #00acee;
+    }
+    .container-bar .fa-pinterest{
+        background: #c8232c;
+        border-radius: 0px 7px 7px 0px;
+    }
+    .icon-social{
+        display: flex;
+        transition: all;
+        transform: translateX(0%);
+        height: 55px;
+        
+    }
+
+
+}
+
+
+
+/* QUERY NRO 5 (hasta 2560): */
+
+@media screen and (min-width: 2560px){
+    /*HEADER*/
+
+    .header{
+        grid-auto-rows: 180px;
+
+    }
+
+    .title{
+        font-size: 24rem;
+        padding-top: 6rem;
+        padding-left: 3rem;
+    }
+
+    .logo img{
+        width: 360px;
+        height: 360px;
+    }
+
+    .menu {
+        font-size: 12rem;
+        font-family: "brick";
+    }
+
+    .menu-item{
+    margin: 3rem;
+    }
+
+    a{
+        justify-content: last baseline;
+    }
+
+
+
+    /* CAJAS MAIN */
+    .parrafo {
+        font-size: 4.3rem;
+        text-align:center;
+        padding: 0.2rem;
+        padding-bottom: 10rem;
+    }
+
+    b{
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 5.4rem;
+    }
+
+
+    .gallery{
+        padding: 0 2rem 5rem 2rem;
+        grid-auto-rows: auto;
+        gap: 1rem;
+    }
+
+    .gallery__picture::before{
+        font-size: 7rem;
+    }
+
+    .descripcion{
+        font-size: 10rem;
+    }
+    /*********FORMULARIO***************/
+
+
+    h2{
+        font-size: 9rem;
+    }
+
+    /*****************************************/
+
+
+
+
+
+    /* FOOTER */
+    .grid-footer{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 10rem);
+            
+    }
+
+    .footer{
+        background: linear-gradient(to bottom, #a6d1d8, white);
+        padding-top: .3rem;
+    } 
+
+    h3{
+        margin-top: 10px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .footer-items a{
+        font-size: 6rem;
+       
+    }
+    .container-bar{
+        padding-top: 1.5rem;
+        display: flex;
+        height: 80px;
+        justify-items: center;
+        bottom: 0;
+    
+    }
+    .container-bar a{
+        display: block;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 55px;
+        transition: all 500ms ease;
+        color: #fff;
+    }
+    .container-bar a:hover{
+        background: #1c1c1c;
+    }
+    .container-bar .fa-facebook{
+        background: #3b5998;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .container-bar .fa-youtube{
+        background: #e52a23;
+    }
+    .container-bar .fa-twitter{
+        background: #00acee;
+    }
+    .container-bar .fa-pinterest{
+        background: #c8232c;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .icon-social{
+        display: flex;
+        transition: all;
+        transform: translateX(0%);
+        height: 80px;
+        
+    }
+
+ 
+
+}

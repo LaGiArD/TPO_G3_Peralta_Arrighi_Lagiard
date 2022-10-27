@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #a6d1d8, white);
+}
+
+
+img{
+    width: 100%;
+    height: 75vh;
+    justify-items: center;
+    display: flex;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-decoration: none;
+}

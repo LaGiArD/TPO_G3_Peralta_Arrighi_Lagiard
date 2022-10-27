@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="KeyWords" content="Viaje,Viajar, Cataratas, Iguazú,Guía, Excursión, Misiones, Turismo, Alojamiento, Recomendaciones, Argentina">
+    <meta name="description" content="Viaja a Iguazú con ‘Viví la experiencia’. Te ofrecemos lo mejor en alojamientos, gastronomía y excursiones en base a tu presupuesto y tus preferencias.">    
+    
+    <script src="https://kit.fontawesome.com/9e18241a2b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link href="https://trial.chatcompose.com/static/trial/all/global/export/css/main.5b1bd1fd.css" rel="stylesheet">    
+    <script async type="text/javascript" src="https://trial.chatcompose.com/static/trial/all/global/export/js/main.a7059cb5.js?user=trial_bkag2015&lang=ES" user="trial_bkag2015" lang="ES"></script>
+    <title>Informacion</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/WhatsApp Image 2022-09-25 at 20.12.16.jpeg" alt="">
+        </div>
+
+        <div class="title">
+            <h1>IGUAZU</h1>
+        </div>
+
+        <div class="menu">
+            <div class="menu-item">
+                <a href="home.html">Home</a>
+            </div>
+            <div class="menu-item">
+                <a href="atracciones.html">Atracciones</a>
+            </div>
+            <div class="menu-item">
+                <a href="gastronomia.html">Gastronomia</a>
+            </div>
+            <div class="menu-item">
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+</header>
+
+
+    <main class="main">
+
+        <h4>Contacto</h4>
+ 
+        <p class="parrafo"><b>Viví la experiencia</b> es el site de recomendaciones turísticas más consultado en redes sociales.<br>Provee una experiencia completa al turista.
+            A continuación, adelantamos nuevos destinos por conocer. <br>También, podés formar parte de nosotros, en nuestro staff, o bien, como un nuevo destino a publicar.
+            <br>Te invitamos a conocernos más! <b>#Vivilaexperiencia</b>                     
+        </p>
+       
+
+
+
+        <section class="gallery">
+
+            <a class="link1" target="_blank" href="pronto.html">
+                <figure class="gallery__picture">
+                    <img src="img/vivi-cordoba.jpeg" class="gallery__img" >
+                </figure>
+            </a>
+
+
+            <a class="link2" target="_blank" href="pronto.html">
+                 <figure class="gallery__picture">
+                     <img src="img/vivi-salta.jpeg" class="gallery__img">
+                </figure>
+            </a>
+
+            <a class="link3" target="_blank" href="pronto.html">
+                 <figure class="gallery__picture">
+                     <img src="img/vivi-bariloche.jpeg" class="gallery__img">
+                 </figure>
+            </a>
+
+            <a class="link4" target="_blank" href="pronto.html">
+                <figure class="gallery__picture">
+                    <img src="img/vivi-mendoza.jpeg" class="gallery__img">
+                 </figure>
+            </a>
+
+            <p class="descripcion descripcion--cor">Cordoba <br><br>
+                <p id="temp1" class="descripcion descripcion--cor"><br> Tmax/min(°C): <br><br>
+                    <span id="tmc"></span> / <span id="tmac"></span></p>
+            </p>
+            
+            <p class="descripcion descripcion--sal">Salta <br><br>
+                <p id="temp1" class="descripcion descripcion--sal"><br>Tmax/min (°C): <br><br> <span id="tms"></span>  / <span id="tmas"></span></p>
+            </p>
+
+            <p class="descripcion descripcion--bar">Bariloche<br><br>
+                <p id="temp1" class="descripcion descripcion--bar"><br>Tmax/min (°C): <br><br> <span id="tmb"></span>  / <span id="tmab"></span></p>
+
+            </p>
+
+            <p class="descripcion descripcion--mend">Mendoza<br><br>
+                <p id="temp1" class="descripcion descripcion--mend"><br>Tmax/min (°C): <br><br> <span id="tmm"></span> / <span id="tmam"></span></p>
+
+            </p>
+
+        </section>
+    
+
+
+        <!-- FORMULARIO -->
+        <h2>Contáctenos</h2>
+        <form action="" class="formulario" id="formulario">
+            
+         
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre (Persona física/jurídica)</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Tomás Suarez/ La Bahía SRL">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre tiene que contener solo hasta 40 caracteres formado por letras</p>
+			</div>
+
+
+            <!-- Grupo: Asunto-->
+			<div class="formulario__grupo" id="grupo__asunto">
+            <label for="disabledSelect" class="formulario__label">Asunto</label>
+             <select id="disabledSelect" class="formulario__select" name="Asunto" required>
+              <option value="Turismo"selected>Turismo</option>
+              <option value="Planes de pago">Planes de pago</option>
+              <option value="RR.HH">RR.HH</option>
+              <option value="Otros">Otros</option>
+             </select>
+			</div>
+
+
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" class="formulario__grupo-input" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="+54 9 XXX XXX XXXX">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <strong>Error:</strong> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<!-- Grupo: Comentarios -->
+			<div class="formulario__grupo" id="grupo__comentarios">
+				<label for="comentarios" class="formulario__label">Comentarios/ Preguntas</label>
+				 <textarea class="formulario__textarea" id="comentarios" rows="3" placeholder="Deje su mensaje aquí (Opcional)" name="Comentario"></textarea>
+			</div>
+
+			<!-- Botones -->
+			
+			<!-- Enviar -->
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente! Lo contactaremos en la brevedad</p>
+			</div>
+
+			
+		</form> 
+       
+    </main>
+
+    <script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <script src="js/api_tiempo.js"></script>
+    
+</body>
+
+
+
+
+
+
+<footer class="footer">
+    <section>
+
+        <h3>Viví la experiencia ®. Todos los derechos reservados.<br>Esmeralda 561-CABA-Arg. <br> Tel: 0810-220-9009</h3>
+
+        <div class="grid-footer"> 
+            <div class="footer-items">
+               <a href="home.html"><i class="fa-solid fa-house-user"> Home </i></a>
+            </div>
+            <!-- Barra de redes Sociales -->
+            <div class="container-bar">
+                    
+                    <div class="icon-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-pinterest"></a>
+                    </div>
+            
+                </div>
+            <div class="footer-items">
+
+            </div>
+        </div>
+                
+
+    </section>
+    
+</footer>
+
+
+
+</html>
